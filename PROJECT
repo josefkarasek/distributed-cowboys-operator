@@ -1,0 +1,15 @@
+domain: example.com
+layout:
+- go.kubebuilder.io/v3
+projectName: distributed-cowboys-operator
+repo: github.com/josefkarasek/distributed-cowboys-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: example.com
+  kind: Shootout
+  path: github.com/josefkarasek/distributed-cowboys-operator/api/v1alpha1
+  version: v1alpha1
+version: "3"
